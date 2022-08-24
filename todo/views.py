@@ -3,8 +3,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login
 from django.db import IntegrityError
+from .models import Todo
 
-# Create your views here.
+
 
 def signupuser(request):
     if request.method == 'GET':
