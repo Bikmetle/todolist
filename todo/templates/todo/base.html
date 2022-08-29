@@ -4,12 +4,14 @@ logged in as
 
 {{ user.username }}
 
-<a href="#">logout</a>
+<br>
+<a href="{% url 'logoutuser' %}">logout</a>
+
 
 {% else %}
 
-<a href="#">login</a>
-<a href="#">sign up</a>
+<a href="{% url 'loginuser' %}">login</a>
+<a href="{% url 'signupuser' %}">sign up</a>
 
 {% endif %}
 
